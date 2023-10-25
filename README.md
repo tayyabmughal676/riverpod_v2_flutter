@@ -13,6 +13,37 @@ This is a template for a Flutter project, organized using Riverpod for state man
 - `presentation`: Contains all UI-related files, organized by screens, widgets, themes, common
   components, and providers.
 
+# My Flutter App
+
+This is a template for a Flutter project, organized using Riverpod for state management.
+
+## Project Structure
+
+```plaintext
+lib/
+|- main.dart
+|- app/
+| |- app.dart
+| |- routes.dart
+|- data/
+| |- repositories/
+| | |- my_entries_repository.dart
+| |- models/
+| | |- entry.dart
+| |- services/
+| | |- api_service.dart
+|- presentation/
+| |- screens/
+| | |- home_screen.dart
+| |- widgets/
+| | |- entry_list_widget.dart
+| |- themes/
+| |- common/
+| |- providers/
+| | |- my_entries_providers.dart
+|- utils/
+```
+
 ## Project Components
 
 - **ApiService**: A class responsible for fetching data from an API.

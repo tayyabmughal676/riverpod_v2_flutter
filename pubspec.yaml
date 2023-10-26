@@ -40,6 +40,8 @@ dependencies:
   dio: ^5.3.3
   http: any
   freezed: ^2.4.5
+  go_router: ^12.0.0
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
   flutter_test:

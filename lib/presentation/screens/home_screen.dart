@@ -62,7 +62,8 @@ class _ActivityScreenState extends ConsumerState<HomeScreen> {
                       ),
                     );
                   }),
-              AsyncError() => const Text("Oops, something unexpected happened"),
+              AsyncError() => Text(
+                  "${entries.value?.error.toString()}"), //Oops, something unexpected happened
               _ => const CircularProgressIndicator(),
             },
           ),

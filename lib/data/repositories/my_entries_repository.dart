@@ -18,7 +18,6 @@ MyEntriesRepository myEntriesRepository(MyEntriesRepositoryRef ref) =>
     MyEntriesRepository();
 
 class MyEntriesRepository {
-  final apiService = ApiService();
   Box<EntryModel> entryBox = Hive.box('entries');
 
   num isUserCount = 0;
@@ -26,7 +25,7 @@ class MyEntriesRepository {
 
   Future<DataResult<EntriesResponse>> getEntries() async {
     try {
-      final entries = await apiService.getEntries();
+      final entries = await ApiService.instance.getEntries();
       return DataResult(data: entries);
     } catch (e) {
       return DataResult(error: 'Failed to load entries: $e');

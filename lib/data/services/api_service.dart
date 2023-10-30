@@ -8,13 +8,10 @@ import 'package:flutter/material.dart';
 import 'package:riverpod_v2/data/models/EntriesResponse.dart';
 
 class ApiService {
-  static final ApiService _singleton = ApiService._internal();
+  //Singleton instance
+  static final ApiService _apiService = ApiService();
 
-  factory ApiService() {
-    return _singleton;
-  }
-
-  ApiService._internal();
+  static ApiService get instance => _apiService;
 
   //get Entries
   Future<EntriesResponse> getEntries() async {

@@ -38,16 +38,41 @@ dependencies:
   flutter_riverpod: ^2.4.5
   riverpod_annotation: ^2.3.0
   dio: ^5.3.3
-  http: any
+  http: ^1.1.0
+  #Connectivity Check
+  connectivity_plus: ^5.0.1
+  #Toast
+  fluttertoast: ^8.2.2
+  lottie: ^2.7.0
+  #Cached Network Image
+  cached_network_image: ^3.3.0
+  #Logger
+  logger: ^2.0.2+1
+  #DateFormat
+  intl: ^0.18.1
   freezed: ^2.4.5
   go_router: ^12.0.1
   #Local Database
   shared_preferences: ^2.2.2
   #Document Directory
   path_provider: ^2.1.1
+  #  Image Selections
+  image_picker: ^1.0.4
+  # For SVG Image/Icons
+  flutter_svg: ^2.0.8
+  flutter_svg_provider: ^1.0.6
+  #  load shimmer
+  shimmer: ^3.0.0
+
   #Local Database Hive
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+
+  # Local Notification
+  firebase_core: ^2.20.0
+  firebase_messaging: ^14.7.2
+  flutter_local_notifications: ^16.1.0
+  flutter_app_badger: ^1.5.0
 
 dev_dependencies:
   flutter_test:
@@ -91,18 +116,16 @@ flutter:
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/custom-fonts/#from-packages
+
+  assets:
+    - assets/svg/
+    - assets/png/
+    - assets/json/
+
+  fonts:
+    - family: PlusJakartaSans
+      fonts:
+        - asset: assets/fonts/jakarta/PlusJakartaSans-Bold.ttf
+        - asset: assets/fonts/jakarta/PlusJakartaSans-Medium.ttf
+        - asset: assets/fonts/jakarta/PlusJakartaSans-SemiBold.ttf
+        - asset: assets/fonts/jakarta/PlusJakartaSans-Regular.ttf

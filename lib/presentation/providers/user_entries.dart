@@ -18,10 +18,13 @@ class UserEntries extends _$UserEntries {
 
   ///
   Future<DataResult<EntriesResponse>> build() async {
+    // final returnEntry =
+    //     await ref.watch(myEntriesRepositoryProvider).getEntries();
+    // final returnNewEntries =
     final returnEntry =
-        await ref.watch(myEntriesRepositoryProvider).getEntries();
+        await ref.watch(myEntriesRepositoryProvider).getNewEntries();
     debugPrint("returnEntry: $returnEntry");
-    return returnEntry;
+    return DataResult(data: returnEntry);
   }
 
   void addCategory({required Entries data}) {

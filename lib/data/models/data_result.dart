@@ -5,7 +5,8 @@
 
 class DataResult<T> {
   final T? data;
+  final int? statusCode;
   final String? error;
 
-  DataResult({this.data, this.error});
+  DataResult({this.data, this.error, this.statusCode});
 }

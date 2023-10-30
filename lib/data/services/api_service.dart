@@ -6,6 +6,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:riverpod_v2/data/models/EntriesResponse.dart';
+import 'package:riverpod_v2/data/services/network_manager/experimental_dio_network_manager.dart';
 
 class ApiService {
   //Singleton instance

@@ -24,6 +24,47 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+    <string>NO</string>
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>whatsapp</string>
+        <string>https</string>
+        <string>http</string>
+        <string>sms</string>
+        <string>tel</string>
+    </array>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+        <key>NSAllowsArbitraryLoadsInWebContent</key>
+        <true/>
+    </dict>
+    <key>NSCameraUsageDescription</key>
+    <string>To capture profile photo please grant camera access</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>This app needs access to location</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app needs access to location when in the background</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>This app requires Mic permission.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>App needs access to photo lib for profile images</string>
+    <key>UI Background Modes</key>
+    <string>Location</string>
+    <key>UIApplicationSupportsIndirectInputEvents</key>
+    <true/>
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>fetch</string>
+        <string>remote-notification</string>
+    </array>
+
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
